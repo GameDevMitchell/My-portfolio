@@ -28,6 +28,7 @@ def send_email(user_info):
 
 
 app = Flask(__name__)
+app.config["SECRET_KEY"] = os.environ.get("FLASK_KEY")
 
 
 @app.route("/")
