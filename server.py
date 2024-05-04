@@ -5,16 +5,20 @@ import os
 
 
 def send_email(user_info):
-    my_email = "mitchell31772@gmail.com"
+    my_email = os.environ.get("sender")
     password = os.environ.get("data")
-    recipient = "mitchellogbo@gmail.com"
+    recipient = os.environ.get("recipient")
 
     msg = EmailMessage()
-    msg['Subject'] = f'Mail from  {user_info["name"]} who accessed your portfolio'
-    msg['From'] = my_email
-    msg['To'] = recipient
-    body = (f"Name: {user_info['name']}\nEmail: {user_info['email']}\nPhone: {user_info['phone']}\nMessage: "
-            f"{user_info['message']}")
+    msg["Subject"] = (
+        f'Mail from {user_info["name"]} who accessed your portfolio recently'
+    )
+    msg["From"] = my_email
+    msg["To"] = recipient
+    body = (
+        f"Name: {user_info['name']}\nEmail: {user_info['email']}\nPhone: {user_info['phone']}\nMessage: "
+        f"{user_info['message']}"
+    )
     msg.set_content(body)
 
     with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
@@ -43,7 +47,7 @@ def get_contact():
             "name": request.form.get("Name"),
             "email": request.form.get("E-mail"),
             "phone": request.form.get("Phone"),
-            "message": request.form.get("Message")
+            "message": request.form.get("Message"),
         }
         send_email(user_info)
         return render_template("contact.html")
@@ -51,4 +55,4 @@ def get_contact():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False, port=5002)
