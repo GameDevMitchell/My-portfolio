@@ -38,7 +38,7 @@ def welcome():
 
 @app.route("/download CV")
 def download():
-    return send_from_directory("static", path="files/cheat_sheet.pdf")
+    return send_from_directory("static", path="files/Mitchell_Ogbo_resume.pdf")
 
 
 @app.route("/contact", methods=["GET", "POST"])
