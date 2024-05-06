@@ -4,6 +4,7 @@ import smtplib
 import os
 
 
+# the mail functionality
 def send_email(user_info):
     my_email = os.environ.get("sender")
     password = os.environ.get("data")
