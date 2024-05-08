@@ -29,3 +29,12 @@ pip install -r requirements.txt
 ```
 
 4. Run the Flask app.
+
+## Built With:
+
+Python: A versatile programming language used for backend development
+Flask: A lightweight Python web framework
+HTML: Used for structuring webpages
+CSS: For styling and visual presentation
+JavaScript: Used for client-side interactivity
+Git: Version control system for tracking changes
