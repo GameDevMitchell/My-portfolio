@@ -1,6 +1,9 @@
 # Portfolio Flask Application
 
 This Flask-based web application serves as my portfolio site. It showcases my skills, projects, and expertise in various areas, such as web development, data analysis, and more.
+You can view the live site [here](https://mitchells-portfolio.onrender.com).
+
+## Features
 
 ## Features
 
