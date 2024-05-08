@@ -22,4 +22,10 @@ git clone https://github.com/GameDevMitchell/mtchells-portfolio.git
 ```
 
 2. Navigate to the project directory
-3. Intsall the required dependencies
+3. Intsall the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the Flask app.
