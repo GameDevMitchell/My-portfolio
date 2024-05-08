@@ -38,3 +38,5 @@ HTML: Used for structuring webpages
 CSS: For styling and visual presentation
 JavaScript: Used for client-side interactivity
 Git: Version control system for tracking changes
+
+## Highlights:
