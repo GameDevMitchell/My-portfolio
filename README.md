@@ -43,3 +43,7 @@ pip install -r requirements.txt
 - **Git**: Version control system for tracking changes
 
 ## Highlights:
+- ![demo](https://github.com/GameDevMitchell/My-portfolio/assets/146736445/be52d0c2-ead8-4b42-b0e8-0a3057b4df31)
+- ![demo](https://github.com/GameDevMitchell/My-portfolio/assets/146736445/51d322a8-5387-4f10-8425-0e8b43c27b20)
+![demo](https://github.com/GameDevMitchell/My-portfolio/assets/146736445/aad3ec97-e805-425a-ade8-74c592d7fb4d)
+
