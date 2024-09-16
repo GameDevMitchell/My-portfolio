@@ -39,7 +39,7 @@ def welcome():
 
 @app.route("/Resume")
 def download():
-    return send_from_directory("static", path="files/Mitchell_resume.pdf")
+    return send_from_directory("static", path="files/Mitchell_updated_resume.pdf")
 
 
 @app.route("/contact", methods=["GET", "POST"])
